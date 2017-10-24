@@ -1,7 +1,7 @@
 # justify-text
 
-This is a test module as part of a tutorial, please ignore.
-It is fully tested; however, using it in production may not be the best idea.
+This is a test module, as part of a tutorial.
+While it is fully tested, using it in production may not be the best idea.
 
 To justify text in production, try [justify](https://www.npmjs.com/package/justify).
 
@@ -41,26 +41,6 @@ rjust('text', 8);
 
 rjust('text', 9, '.');
 // => ".....text"
-```
-
-### formatCommas()
-
-```formatCommas(value)``` takes a value, converts it to a string, and inserts commas
-as thousands separators.
-
-**NB**: No attention is given to internationalisation. Commas are always used for
-thousands separation, and dots for decimal separation. Hence this will look wrong in continental Europe.
-
-``` js
-formatCommas(100);
-// => '100'
-
-formatCommas(11458);
-// => '11,458'
-
-formatCommas(1145810.56);
-// => '1,145,810.56'
-
 ```
 
 ## License

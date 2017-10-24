@@ -16,7 +16,3 @@ exports.ljust = function(str, width, fillChar=' ') {
 exports.rjust = function(str, width, fillChar=' ') {
   return padding(str, width, fillChar) + str;
 };
-
-exports.formatCommas = function(value) {
-  return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-};

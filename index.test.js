@@ -1,4 +1,4 @@
-var { ljust, rjust, formatCommas } = require('./index');
+var { ljust, rjust } = require('./index');
 
 console.log('Starting Tests...');
 
@@ -41,29 +41,5 @@ var rjust3 = rjust('more', 3);
 if (rjust3 !== 'more') {
   throw new Error('rjust not enough space failed');
 }
-
-var fcTest = (value, expected) => {
-  var actual = formatCommas(value);
-
-  if (actual !== expected) {
-    console.log({expected, actual});
-    throw new Error('formatCommas failed.');
-  }
-};
-
-fcTest(1, '1');
-fcTest(12, '12');
-fcTest(123, '123');
-fcTest(1234, '1,234');
-fcTest(12345, '12,345');
-fcTest(123456, '123,456');
-fcTest(1234567, '1,234,567');
-fcTest(12345678, '12,345,678');
-fcTest(123456789, '123,456,789');
-fcTest(1234567890, '1,234,567,890');
-
-fcTest(1.54, '1.54');
-fcTest(1234.54, '1,234.54');
-fcTest(1234567.547, '1,234,567.547');
 
 console.log('Tests complete.')
