@@ -1,7 +1,7 @@
 {
   "name": "justify-text",
   "version": "1.0.0",
-  "description": "left or right justify text and format integers with commas",
+  "description": "left or right justify text",
   "main": "index.js",
   "scripts": {
     "test": "node index.test.js",

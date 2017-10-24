@@ -17,9 +17,7 @@ or
 yarn add justify-text
 ```
 
-## Usage
-
-### ljust() and rjust()
+## Functions
 
 ```ljust()``` and ```rjust()``` take a string, a width to render it in,
 and an optional padding character.
@@ -27,7 +25,11 @@ and an optional padding character.
 ``` js
 ljust(string, width, padding=' ')
 rjust(string, width, padding=' ')
+```
 
+### Usage
+
+``` js
 const { ljust, rjust } = require('justify-text');
 
 ljust('text', 7);
