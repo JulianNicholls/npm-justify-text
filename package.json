@@ -1,0 +1,12 @@
+{
+  "name": "julian-module",
+  "version": "1.0.0",
+  "description": "Julian Module. Please Ignore",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "author": "Julian Nicholls",
+  "license": "MIT"
+}
