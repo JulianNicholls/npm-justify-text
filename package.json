@@ -1,12 +1,13 @@
 {
-  "name": "julian-module",
+  "name": "justify-text",
   "version": "1.0.0",
-  "description": "Julian Module. Please Ignore",
+  "description": "left or right justify text and format integers with commas",
   "main": "index.js",
   "scripts": {
     "test": "node index.test.js",
     "prepublishOnly": "npm test"
   },
   "author": "Julian Nicholls",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "https://github.com/JulianNicholls/npm-justify-text"
 }

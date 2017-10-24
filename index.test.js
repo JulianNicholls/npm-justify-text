@@ -1,49 +1,49 @@
-const { ljust, rjust, formatCommas } = require('./index');
+var { ljust, rjust, formatCommas } = require('./index');
 
 console.log('Starting Tests...');
 
-const ljust1 = ljust('one', 5);
+var ljust1 = ljust('one', 5);
 if (ljust1 !== 'one  ') {
   throw new Error('ljust space padding failed');
 }
 
-const ljust4 = ljust('one', 7, 'x');
+var ljust4 = ljust('one', 7, 'x');
 if (ljust4 !== 'onexxxx') {
   throw new Error('ljust character padding failed');
 }
 
-const ljust2 = ljust('one', 3);
+var ljust2 = ljust('one', 3);
 if (ljust2 !== 'one') {
   throw new Error('ljust no padding failed');
 }
 
-const ljust3 = ljust('longer', 5);
+var ljust3 = ljust('longer', 5);
 if (ljust3 !== 'longer') {
   throw new Error('ljust lack of space failed');
 }
 
-const rjust1 = rjust('two', 6);
+var rjust1 = rjust('two', 6);
 if (rjust1 !== '   two') {
   throw new Error('rjust padding failed');
 }
 
-const rjust4 = rjust('two', 8, 'y');
+var rjust4 = rjust('two', 8, 'y');
 if (rjust4 !== 'yyyyytwo') {
   throw new Error('rjust character padding failed');
 }
 
-const rjust2 = rjust('two', 3);
+var rjust2 = rjust('two', 3);
 if (rjust2 !== 'two') {
   throw new Error('rjust no padding failed');
 }
 
-const rjust3 = rjust('more', 3);
+var rjust3 = rjust('more', 3);
 if (rjust3 !== 'more') {
   throw new Error('rjust not enough space failed');
 }
 
-const fcTest = (value, expected) => {
-  const actual = formatCommas(value);
+var fcTest = (value, expected) => {
+  var actual = formatCommas(value);
 
   if (actual !== expected) {
     console.log({expected, actual});
@@ -61,5 +61,9 @@ fcTest(1234567, '1,234,567');
 fcTest(12345678, '12,345,678');
 fcTest(123456789, '123,456,789');
 fcTest(1234567890, '1,234,567,890');
+
+fcTest(1.54, '1.54');
+fcTest(1234.54, '1,234.54');
+fcTest(1234567.547, '1,234,567.547');
 
 console.log('Tests complete.')
