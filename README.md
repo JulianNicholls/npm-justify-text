@@ -1,9 +1,9 @@
 # justify-text
 
-This is a test module, as part of a tutorial.
-While it is fully tested, using it in production may not be the best idea.
+This is a simple module, which allows for left or right justifying text
+in a given width. The padding character can be specified, and it defults 
+to a space.
 
-To justify text in production, try [justify](https://www.npmjs.com/package/justify).
 
 ## Installation
 
@@ -20,7 +20,7 @@ yarn add justify-text
 ## Functions
 
 ```ljust()``` and ```rjust()``` take a string, a width to render it in,
-and an optional padding character.
+and an optional padding character, which is a space by default.
 
 ``` js
 ljust(string, width, padding=' ')
@@ -48,3 +48,4 @@ rjust('text', 9, '.');
 ## License
 
 MIT
+

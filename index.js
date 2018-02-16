@@ -1,8 +1,8 @@
 function padding(str, width, fillChar) {
-  var padBytes = width - str.length;
-  var padding  = '';
+  const padBytes = width - str.length;
+  let padding  = '';
 
-  for(var i = 0; i < padBytes; ++i) {
+  for(let i = 0; i < padBytes; ++i) {
     padding += fillChar;
   }
 
