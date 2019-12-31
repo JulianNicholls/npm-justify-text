@@ -4,10 +4,13 @@
   "description": "left or right justify text",
   "main": "index.js",
   "scripts": {
-    "test": "node index.test.js",
+    "test": "jest",
     "prepublishOnly": "npm test"
   },
   "author": "Julian Nicholls",
   "license": "MIT",
-  "repository": "https://github.com/JulianNicholls/npm-justify-text"
+  "repository": "https://github.com/JulianNicholls/npm-justify-text",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
