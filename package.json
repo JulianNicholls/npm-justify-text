@@ -1,6 +1,6 @@
 {
   "name": "justify-text",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "left or right justify text",
   "main": "index.js",
   "scripts": {
