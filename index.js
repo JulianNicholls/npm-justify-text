@@ -9,14 +9,14 @@ function padding(str, width, fillChar) {
   return padding;
 }
 
-exports.ljust = function(str, width = 0, fillChar = ' ') {
-  if (typeof str === 'number') str = str.toString();
+exports.ljust = function (str, width = 0, fillChar = ' ') {
+  str = String(str);
 
   return str + padding(str, width, fillChar);
 };
 
-exports.rjust = function(str, width = 0, fillChar = ' ') {
-  if (typeof str === 'number') str = str.toString();
+exports.rjust = function (str, width = 0, fillChar = ' ') {
+  str = String(str);
 
   return padding(str, width, fillChar) + str;
 };
