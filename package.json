@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "description": "left or right justify text",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest",
     "prepublishOnly": "npm test"
@@ -11,6 +12,6 @@
   "license": "MIT",
   "repository": "https://github.com/JulianNicholls/npm-justify-text",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^26.4.0"
   }
 }
