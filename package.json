@@ -12,6 +12,6 @@
   "license": "MIT",
   "repository": "https://github.com/JulianNicholls/npm-justify-text",
   "devDependencies": {
-    "jest": "^26.4.0"
+    "jest": "^29.7.0"
   }
 }
